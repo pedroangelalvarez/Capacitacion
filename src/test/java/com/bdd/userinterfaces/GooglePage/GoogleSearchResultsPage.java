@@ -1,4 +1,4 @@
-package com.bdd.tasks.googleSearch;
+package com.bdd.userinterfaces.GooglePage;
 
 import org.openqa.selenium.By;
 

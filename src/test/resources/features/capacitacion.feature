@@ -20,13 +20,3 @@ Característica: Realizar una búsqueda en Google
       | Ciudad   |
       | Trujillo |
       | Lima     |
-
-  @BusquedaCiudad @UNHAPPY
-  Esquema del escenario: [UNHAPPY PATH] Realiza busqueda no exitosa de resultado en Google - Ingresa descripcion invalida
-    Dado que el actor abre la página de Google
-    Cuando escribo "<Palabra>"
-    Y accedo al primer resultado
-    Entonces valido que salí de Google
-    Ejemplos:
-      | Palabra   |
-      | asjdajajsjasa |

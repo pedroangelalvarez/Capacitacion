@@ -5,6 +5,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.Tasks;
 import com.bdd.userinterfaces.GooglePage.*;
+import net.thucydides.core.annotations.Step;
 
 public class EscribirPalabra implements Task {
 
@@ -17,7 +18,7 @@ public class EscribirPalabra implements Task {
     public static EscribirPalabra enGoogle(String palabra) {
         return Tasks.instrumented(EscribirPalabra.class, palabra);
     }
-
+    @Step("Escribir la palabra {0} en el buscador de Google")
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
